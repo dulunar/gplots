@@ -27,17 +27,17 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## Installation
 
-To install the stable version on CRAN:
+Fixed issue in heatmap.2 where dendrograms were calculated using hclust even when Rowv or Colv were set to NA, FALSE, or NULL
+
+To install the fixed version on github:
 
 ```r
-install.packages('gplots')
-```
+remove.packages('gplots'); 
 
+library('devtools'); 
 
-And then you may load the package using:
+install_github("ChristophH/gplots")
 
-```R
-library("gplots")
 ```
 
 ## Usage
